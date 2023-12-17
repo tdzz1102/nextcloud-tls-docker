@@ -17,6 +17,7 @@ PATH_TO_CERT=/your/cert
 docker run -p 443:443 \
            -d --name nextcloud-tls \
            -v $PATH_TO_CERT:/cert \
+           -v nextcloud-data:/var/www/html \
            tdzz1102/nextcloud-tls:20231217
 ```
 
